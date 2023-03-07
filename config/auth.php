@@ -68,10 +68,9 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
-
         'admins' => [
-            'driver' => 'database',
-            'table' => \App\Models\Admin::class,
+            'driver' => 'eloquent',
+            'model' => App\Models\Admin::class,
         ],
     ],
 
