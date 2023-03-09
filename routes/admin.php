@@ -10,7 +10,6 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('logout',[\App\Http\Controllers\AdminController::class , 'logout'])->name('admin.logout');
 
     Route::group(['middleware' => 'admin.auth'], function () {
-
         Route::get('home', [\App\Http\Controllers\AdminController::class, 'index'])->name('admin.home');
     });
 });
